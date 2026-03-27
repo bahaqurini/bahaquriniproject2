@@ -56,6 +56,7 @@
         flex-direction: column;
         gap: 1rem;
         padding-inline: 1rem;
+        list-style: none;
     }
     &__link {
         color: $color-dark;
@@ -63,9 +64,7 @@
         font-size: 1rem;
         font-weight: 500;
         transition: color 0.3s ease;
-        &:hover {
-            color: $color-primary;
-        }
+
     }
     &__link:focus,
     &__burger:focus {
@@ -74,7 +73,7 @@
     }
 
     &__checkbox:checked ~ &__nav {
-        display: block;
+        display: flex;
     }
 
 }
