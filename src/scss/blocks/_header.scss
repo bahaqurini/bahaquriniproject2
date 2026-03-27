@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 1000;
   background-color :$color-light;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   &__container {
     display: flex;
     justify-content: space-between;
@@ -20,23 +21,25 @@
         font-weight: bold;
         color: $color-dark;
         text-decoration: none;
+    
     }
     &__checkbox {
         display: none;
     }
     &__burger {
-        display: none;
+        display: flex;
         flex-direction: column;
         cursor: pointer;
         justify-content: space-between;
-        
+        z-index: 1001;
+        padding: 5px;
     }
     &__burger-line {
         width: 25px;
-        height: 3px;
+        height: 2px;
         background-color: $color-dark;
         transition: all 0.3s ease;
-        border-radius: 999px;
+        //border-radius: 999px;
     }
     &__nav {
         position: absolute;
@@ -44,9 +47,9 @@
         left: 0;
         width: 100%;
         background-color: $color-light;
-        padding: 1rem 0;
+        padding: 1rem;
         display: none;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
     }
     &__list {
         display: flex;
