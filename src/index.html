@@ -15,7 +15,7 @@
 <body id="body">
   <header class="header">
     <div class="container header__container">
-      <a href="#bio" class="header__logo">Bahaa</a>
+      <a href="#bio" class="header__logo">Bahaa Qurini</a>
 
       <input type="checkbox" id="menu-toggle" class="header__checkbox">
 
@@ -26,8 +26,8 @@
       </label>
       <nav class="header__nav" aria-label="Main navigation">
         <ul class="header__list">
-          <li class="header__item"><a href="#latest-projects" class="header__link">Projects</a></li>
           <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+          <li class="header__item"><a href="#latest-projects" class="header__link">Projects</a></li>
           <li class="header__item"><a href="#resume" class="header__link">Resume</a></li>
           <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
         </ul>
@@ -35,12 +35,116 @@
     </div>
   </header>
   <main id="main">
-    <section id="bio" class="bio">
+    <section id="bio" class="bio" aria-labelledby="bio__heading">
+      <div class="container bio__container">
+        <div class="bio__content">
+          <figure class="bio__figure">
+            <img src="../assets/profile.jpg" alt="Bahaa Qurini" class="bio__image">
+          </figure>
+          <div class="bio__info">
+            <h1 class="bio__name">Bahaa Qurini</h1>
+            <p class="bio__description">A passionate web developer with a knack for creating dynamic and responsive websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building user-friendly interfaces and seamless user experiences. I am dedicated to continuous learning and staying up-to-date with the latest web technologies to deliver high-quality projects.</p>
+            
+            <div class="bio__actions" role="group" aria-label="Call to action buttons">
+              <a href="#latest-projects" class="btn btn--primary">View My Work</a>
+              <a href="#contact" class="btn btn--secondary">Contact Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+        
+
     </section>
-    <section id="latest-projects" class="latest-projects">
+    <section id="latest-projects" class="projects" aria-labelledby="projects__heading">
+      <div class="container projects__container">
+        
+        <h2 id="projects__heading" class="projects__heading">Latest Projects</h2>
+        <ul class="projects__grid">
+          <li class="projects__item">
+            <article class="card">
+              <figure class="card__figure">
+                <img 
+                  src="path/to/project-1.jpg" 
+                  alt="Project One Screenshot" 
+                  class="card__image"
+                  loading="lazy"
+                >
+              </figure>
+              <div class="card__content">
+                <h3 class="card__title">Project One</h3>
+                <p class="card__description">
+                  Short description of the project and technologies used.
+                </p>
+                <a href="#" class="card__link" aria-label="View Project One details">
+                  View Project
+                </a>
+              </div>
+            </article>
+          </li>
+       
+          <li class="projects__item">
+            <article class="card">
+              <figure class="card__figure">
+                <img 
+                  src="path/to/project-2.jpg" 
+                  alt="Project Two Screenshot" 
+                  class="card__image"
+                  loading="lazy"
+                >
+              </figure>
+              <div class="card__content">
+                <h3 class="card__title">Project Two</h3>
+                <p class="card__description">
+                  Short description of the project and technologies used.
+                </p>
+                <a href="#" class="card__link" aria-label="View Project Two details">
+                  View Project
+                </a>
+              </div>
+            </article>
+          </li>
+          
+          <!-- Project Card 3 -->
+          <li class="projects__item">
+            <article class="card">
+              <figure class="card__figure">
+                <img 
+                  src="path/to/project-3.jpg" 
+                  alt="Project Three Screenshot" 
+                  class="card__image"
+                  loading="lazy"
+                >
+              </figure>
+              <div class="card__content">
+                <h3 class="card__title">Project Three</h3>
+                <p class="card__description">
+                  Short description of the project and technologies used.
+                </p>
+                <a href="#" class="card__link" aria-label="View Project Three details">
+                  View Project
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+        
+        <!-- زر عرض المزيد -->
+        <div class="projects__cta">
+          <a href="#" class="btn btn--primary">View All Projects</a>
+        </div>
+      </div>
+    
     </section>
   </main>
-  <footer class="footer">
+    <footer class="footer" aria-label="Site footer">
+    <div class="container footer__container">
+      <p class="footer__copyright">
+        © 2026 Bahaa Qurini. All rights reserved.
+      </p>
+    </div>
   </footer>
 </body>
 
