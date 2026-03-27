@@ -1,0 +1,8 @@
+@use "../utils/utils.scss" as *;
+.footer {
+  background-color: $color-dark;
+  color: $color-light;
+  padding: 2rem 0;
+  text-align: center;
+  
+}

@@ -2,5 +2,8 @@
 @use "./resets" ;
 
 body {
-  background-color: red;
+  // background-image: url('/src/img/background.jpg');
+  // background-repeat: repeat;
+  background-color: $color-light;
+  font-family: 'Arial', sans-serif;
 }
