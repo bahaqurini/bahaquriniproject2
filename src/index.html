@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Portfolio</title>
+  <title>Bahaa Qurini Portfolio</title>
   <link rel="stylesheet" href="../dist/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,25 @@
 
 <body id="body">
   <header class="header">
+    <div class="container header__container">
+      <a href="#bio" class="header__logo">Bahaa</a>
+
+      <input type="checkbox" id="menu-toggle" class="header__checkbox">
+
+      <label for="menu-toggle" class="header__burger" aria-label="Open navigation menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </label>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__list">
+          <li class="header__item"><a href="#latest-projects" class="header__link">Projects</a></li>
+          <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+          <li class="header__item"><a href="#resume" class="header__link">Resume</a></li>
+          <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main id="main">
     <section id="bio" class="bio">
